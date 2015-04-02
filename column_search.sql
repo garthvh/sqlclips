@@ -1,5 +1,3 @@
-USE BE
-GO
 SELECT 
 	sys.tables.name AS TableName,
 	SCHEMA_NAME(schema_id) AS SchemaName,
@@ -9,7 +7,7 @@ FROM sys.tables
 	INNER JOIN sys.columns 
 		ON sys.tables.OBJECT_ID = sys.columns.OBJECT_ID
 		
-WHERE sys.columns.name LIKE '%LF%'
+WHERE sys.columns.name LIKE '%Search Term%'
 
 ORDER BY 
 	SchemaName, 
