@@ -1,0 +1,2 @@
+# sqlclips
+SQL Server Snippits
